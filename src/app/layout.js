@@ -15,16 +15,16 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Переименуйте в свой проект",
+  title: "WebApp",
   description: "Своё описание",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-[calc(100vh)] flex flex-col`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-[calc(100vh)] flex flex-col text-black`}>
         <Header/>
-            <main className="flex-grow flex justify-center bg-gray-200">
+            <main className="flex-grow flex justify-center bg-gray-200 text-black">
                 {children}
             </main>
         <Footer/>

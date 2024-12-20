@@ -2,27 +2,35 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <form className={"bg-white shadow-2xl min-h-1/3 min-w-1/3 p-6 rounded-lg"}>
-            <div className={"w-full"}>
-                <a className={"text-black mr-4"}>Логин:</a>
-                <input
-                    className={"bg-gray-400 shadow-lg p-1 w-full rounded-lg"}
-                />
-            </div>
-            <div className={"mt-6 w-full"}>
-                <a className={"text-black mr-4"}>Пароль:</a>
-                <input
-                    className={"bg-gray-400 shadow-lg p-1 w-full rounded-lg"}
-                />
-            </div>
-            <div className={"w-full"}>
-                <button className={"bg-black w-full my-4 p-1 rounded-lg"}
-                type="submit"
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+            <h1 className="text-2xl font-bold mb-6">Авторизация</h1>
+            <form className="bg-white p-6 rounded shadow-md w-80">
+                <div className="mb-4">
+                    <label htmlFor="login" className="block text-gray-700 font-medium mb-2">Логин:</label>
+                    <input
+                        type="text"
+                        id="login"
+                        className="w-full p-2 border border-gray-300 rounded"
+                        placeholder="Введите логин"
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="password" className="block text-gray-700 font-medium mb-2">Пароль:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        className="w-full p-2 border border-gray-300 rounded"
+                        placeholder="Введите пароль"
+                    />
+                </div>
+                <button
+                    type="submit"
+                    className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
                 >
-                    Кнопка
+                    Войти
                 </button>
-            </div>
-        </form>
+            </form>
+        </div>
     );
 };
 

@@ -2,9 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="h-[25px] bg-white text-center text-black">
-            <a>Ваш Текст</a>
-        </div>
+        <footer className="bg-white border-t p-4 text-center">
+            <p className="text-gray-600">
+                &copy; 2024 - Винтер Александр Владимирович{' '}
+                <a href="#privacy" className="text-blue-500 hover:underline">Privacy</a>
+            </p>
+        </footer>
     );
 };
 
